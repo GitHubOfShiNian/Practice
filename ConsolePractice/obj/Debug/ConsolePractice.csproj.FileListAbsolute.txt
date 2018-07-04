@@ -1,1 +1,9 @@
 D:\project\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.exe.config
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.exe.config
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.exe
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.pdb
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Debug\Newtonsoft.Json.dll
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Debug\Newtonsoft.Json.xml
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.csprojResolveAssemblyReference.cache
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.exe
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.pdb
