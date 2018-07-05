@@ -1,0 +1,7 @@
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\ConsolePractice.exe.config
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\ConsolePractice.exe
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\ConsolePractice.pdb
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\Newtonsoft.Json.dll
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\Newtonsoft.Json.xml
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Release\ConsolePractice.exe
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Release\ConsolePractice.pdb
