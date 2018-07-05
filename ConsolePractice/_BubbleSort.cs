@@ -17,12 +17,12 @@ namespace ConsoleApplication
                     int j = rdm.Next(10, 99);
                     data.SetValue(j, i);
                 }
-                //var result1 = await BubbleSort(data);
-                //Console.WriteLine(JsonConvert.SerializeObject(result1));
+                var result1 = await BubbleSort(data);
+                Console.WriteLine(JsonConvert.SerializeObject(result1));
                 //var result2 = await recursiveBubble(data, data.Length);
                 //Console.WriteLine(JsonConvert.SerializeObject(result2));
-                var result3 = await selectinoSort(data);
-                Console.WriteLine(JsonConvert.SerializeObject(result3));
+                //var result3 = await selectinoSort(data);
+                //Console.WriteLine(JsonConvert.SerializeObject(result3));
             }
             catch (Exception ex)
             {
@@ -30,6 +30,17 @@ namespace ConsoleApplication
                 throw;
             }
         }
+        public static void swap(ref int a, ref int b)
+        {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+        /// <summary>
+        /// 冒泡
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         async public static Task<int[]> BubbleSort(int[] data)
         {
             for (int i = 0; i < data.Length - 1; i++)
@@ -38,15 +49,18 @@ namespace ConsoleApplication
                 {
                     if (data[j] > data[j - 1])
                     {
-                        data[j] = data[j] + data[j - 1];
-                        data[j - 1] = data[j] - data[j - 1];
-                        data[j] = data[j] - data[j - 1];
+                        swap(ref data[j], ref data[j - 1]);
                     }
                 }
             }
             return data;
         }
-
+        /// <summary>
+        /// 递归冒泡
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         async public static Task<int[]> recursiveBubble(int[] data, int i)
         {
             if (i == 0)
@@ -59,9 +73,7 @@ namespace ConsoleApplication
                 {
                     if (data[j] > data[j - 1])
                     {
-                        data[j] = data[j] + data[j - 1];
-                        data[j - 1] = data[j] - data[j - 1];
-                        data[j] = data[j] - data[j - 1];
+                        swap(ref data[j], ref data[j - 1]);
                     }
                     j++;
                 }
@@ -70,7 +82,11 @@ namespace ConsoleApplication
             }
             return data;
         }
-
+        /// <summary>
+        /// 选择
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         async public static Task<int[]> selectinoSort(int[] data)
         {
             try
@@ -86,14 +102,7 @@ namespace ConsoleApplication
                             minIndex = j;
                         }
                     }
-                    Console.WriteLine(data[i]);
-                    Console.WriteLine(data[minIndex]);
-                    //data[i] = data[i] + data[minIndex];
-                    //data[minIndex] = data[i] - data[minIndex];
-                    //data[i] = data[i] - data[minIndex];
-                    var temp = data[i];
-                    data[i] = data[minIndex];
-                    data[minIndex] = temp;
+                    swap(ref data[i], ref data[minIndex]);
                 }
             }
             catch (Exception ex)
@@ -102,5 +111,6 @@ namespace ConsoleApplication
             }
             return data;
         }
+
     }
 }
