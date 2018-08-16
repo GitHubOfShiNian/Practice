@@ -1,6 +1,4 @@
-﻿using ConsoleApplication;
-
-namespace ConsolePractice
+﻿namespace ConsolePractice
 {
     class Program
     {
