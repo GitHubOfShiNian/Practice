@@ -5,3 +5,4 @@ E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\Newtonsoft
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\Newtonsoft.Json.xml
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Release\ConsolePractice.exe
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Release\ConsolePractice.pdb
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\obj\Release\ConsolePractice.csprojResolveAssemblyReference.cache
