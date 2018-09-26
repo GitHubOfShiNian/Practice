@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoringLevel.cs" />
+    <Compile Include="Stack.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="DisplayAttribute.cs" />
     <Compile Include="EnumDisplay.cs" />
     <Compile Include="EnumTest.cs" />
