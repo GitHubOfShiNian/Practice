@@ -12,12 +12,12 @@ namespace ConsolePractice
             public string MsgTime { get; set; }
         }
 
-        static void Main()
-        {
-            var s = new SendShortMessageRequest { Mobile = "汉字的" };
-            Console.WriteLine(nameof(s.Mobile));
-            Console.ReadKey();
-        }
-        //static void Main(string[] args) => Delegate.Run().Wait();
+        //static void Main()
+        //{
+        //    var s = new SendShortMessageRequest { Mobile = "汉字的" };
+        //    Console.WriteLine(nameof(s.Mobile));
+        //    Console.ReadKey();
+        //}
+        static void Main(string[] args) => IsLeapYear.Run().Wait();
     }
 }

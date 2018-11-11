@@ -17,6 +17,12 @@ namespace ConsolePractice
             }
             object result = top.data;
             top = top.next;
+            var s = new SIOrderInfo
+            {
+                OrderCode = "",
+                CreatedTime = DateTime.Now,
+                MBLNo = ""
+            };
             return result;
         }
         class Entry
@@ -28,6 +34,16 @@ namespace ConsolePractice
                 this.next = next;
                 this.data = data;
             }
+            
+        }
+        public class OrderInfo
+        {
+            public string OrderCode { get; set; }
+            public DateTime CreatedTime { get; set; }
+        }
+        public class SIOrderInfo:OrderInfo
+        {
+            public string MBLNo { get; set; }
         }
     }
 }

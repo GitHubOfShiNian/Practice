@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoringLevel.cs" />
+    <Compile Include="ExcuteMethod.cs" />
+    <Compile Include="IsLeapYear.cs" />
+    <Compile Include="ReflectionSyntax.cs" />
     <Compile Include="Stack.cs" />
     <Compile Include="Delegate.cs" />
     <Compile Include="DisplayAttribute.cs" />
