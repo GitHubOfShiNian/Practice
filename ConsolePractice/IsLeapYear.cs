@@ -35,5 +35,11 @@ namespace ConsolePractice
                 throw;
             }
         }
+        public string Money()
+        {
+            var ret = string.Empty;
+            
+            return ret;
+        }
     }
 }
