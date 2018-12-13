@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿#define PI
+
 using System;
 
 namespace ConsolePractice
@@ -29,37 +30,14 @@ namespace ConsolePractice
         //}
         //static void Main(string[] args) => IsLeapYear.Run().Wait();
 
-        static void Main()
+        static void Main(string[] args)
         {
-            try
-            {
-                string html = Crawler.DownloadHtml(@"http://www.jd.com/allSort.aspx");
-                HtmlDocument doc = new HtmlDocument();
-                doc.LoadHtml(html);
-                string goodClass = @"//*[@class='items']/dl/dd";
-                HtmlNodeCollection noneNodeList = doc.DocumentNode.SelectNodes(goodClass);
-                foreach (var node in noneNodeList)
-                {
-                    HtmlDocument docChild = new HtmlDocument();
-                    docChild.LoadHtml(node.OuterHtml);
-                    string urlPath = "/dd/a";
-                    HtmlNodeCollection list = docChild.DocumentNode.SelectNodes(urlPath);
-                    foreach (var l in list)
-                    {
-                        HtmlDocument docChild1 = new HtmlDocument();
-                        docChild1.LoadHtml(l.OuterHtml);
-                        var sortUrl = l.Attributes["href"].Value;
-                        if (!string.IsNullOrWhiteSpace(sortUrl) && sortUrl.Contains("cat="))
-                        {
-                            InsertSort("https:" + sortUrl);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+#if (!PI)
+            Console.WriteLine("PI is defind");
+#else
+            Console.WriteLine("PI is defind");
+#endif
+            Console.ReadKey();
         }
     }
 }

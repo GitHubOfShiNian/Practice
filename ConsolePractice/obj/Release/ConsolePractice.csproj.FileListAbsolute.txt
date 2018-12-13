@@ -10,3 +10,6 @@ E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\EntityFram
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\EntityFramework.SqlServer.dll
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\EntityFramework.xml
 E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\EntityFramework.SqlServer.xml
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\HtmlAgilityPack.dll
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\HtmlAgilityPack.pdb
+E:\学习用项目\GitHub\ConsolePractice\ConsolePractice\bin\Release\HtmlAgilityPack.xml
