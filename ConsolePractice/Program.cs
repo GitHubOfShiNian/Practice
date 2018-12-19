@@ -1,8 +1,4 @@
-﻿#define PI
-
-using System;
-
-namespace ConsolePractice
+﻿namespace ConsolePractice
 {
     class Program
     {
@@ -30,14 +26,11 @@ namespace ConsolePractice
         //}
         //static void Main(string[] args) => IsLeapYear.Run().Wait();
 
+
+
         static void Main(string[] args)
         {
-#if (!PI)
-            Console.WriteLine("PI is defind");
-#else
-            Console.WriteLine("PI is defind");
-#endif
-            Console.ReadKey();
+            //ExecuteRectangle.Main(args);
         }
     }
 }
